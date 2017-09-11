@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>B</description>
+    <display-name>A</display-name>
+    <servlet-name>StudentAdd.do</servlet-name>
+    <servlet-class>com.dc365.hibernatecrud.StudentAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>B</description>
+    <display-name>A</display-name>
+    <servlet-name>StudentDelete.do</servlet-name>
+    <servlet-class>com.dc365.hibernatecrud.StudentDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>B</description>
+    <display-name>A</display-name>
+    <servlet-name>StudentEdit.do</servlet-name>
+    <servlet-class>com.dc365.hibernatecrud.StudentEdit</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>StudentAdd.do</servlet-name>
+    <url-pattern>/servlet/StudentAdd.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudentDelete.do</servlet-name>
+    <url-pattern>/servlet/StudentDelete.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudentEdit.do</servlet-name>
+    <url-pattern>/servlet/StudentEdit.do</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
